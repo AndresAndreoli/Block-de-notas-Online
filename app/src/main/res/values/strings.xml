@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">blockNotasOnline</string>
+
+    <string name="register">Forgot password?</string>
+
+    <string name="navigation_drawer_close">Close</string>
+    <string name="bar_title">BlockNotes</string>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:paddingTop="80dp"
+    android:background="@color/teal_50">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/viewCustom"
+        android:text="Notes"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        style="@style/viewCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_medium"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/viewCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        style="@style/viewCustom"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:textColorHint="@color/gray_medium"
+        android:onClick="callForgotPassword"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/viewCustom"
+        android:text="Sign in"
+        android:layout_marginTop="30dp"
+        android:background = "@drawable/button_login"
+        android:onClick="callSignIn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/viewCustom"
+        android:text="Register"
+        android:layout_marginTop="15dp"
+        android:background = "@drawable/button_login"
+        android:backgroundTint="@color/teal_500"
+        android:onClick="callRegister" />
+
+</LinearLayout>

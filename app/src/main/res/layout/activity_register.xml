@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="@color/teal_50">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        style="@style/viewCustom"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/etRegisterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/viewCustom"
+        android:hint="Name"
+        android:textColorHint="@color/gray_medium"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etRegisterLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/viewCustom"
+        android:hint="Last Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_medium"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/viewCustom"
+        android:textColor="@color/black"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/gray_medium"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/viewCustom"
+        android:textColor="@color/black"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/gray_medium"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etRegisterConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/viewCustom"
+        android:textColor="@color/black"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/gray_medium"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/viewCustom"
+        android:background="@color/teal_50"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegisterCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/gray_medium"
+            android:layout_gravity=""
+            app:layout_constraintLeft_toLeftOf="@+id/clContenedor"
+            app:layout_constraintRight_toLeftOf="@+id/btnRegisterSignUp"
+            app:layout_constraintTop_toTopOf="@id/clContenedor"
+            app:layout_constraintBottom_toBottomOf="@id/clContenedor"
+            android:onClick="callCancel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegisterSignUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:backgroundTint="@color/teal_900"
+            app:layout_constraintTop_toTopOf="@id/clContenedor"
+            app:layout_constraintBottom_toBottomOf="@id/clContenedor"
+            app:layout_constraintLeft_toRightOf="@id/btnRegisterCancel"
+            app:layout_constraintRight_toRightOf="@id/clContenedor"
+            android:onClick="callSignUp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

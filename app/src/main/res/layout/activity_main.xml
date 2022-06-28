@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_50"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_500"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_500"
+            android:drawableLeft="@drawable/ic_baseline_login_24"
+            android:rotationY="180"
+            android:onClick="callsignOut"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbHome"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/teal_500"
+        android:src="@drawable/plus"
+        android:translationX="-15dp"
+        android:translationY="-80dp"
+        app:maxImageSize="50dp"
+        android:onClick="callAddNoteActivity"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModifyNote_Activity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etModifyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter title"
+        android:textStyle="bold"
+        android:textColorHint="@color/gray_medium_medium"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20sp"
+        android:background="@android:color/transparent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_medium_medium"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:id="@+id/etModifyContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:hint="Enter content"
+        android:textColorHint="@color/gray_medium_medium"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="17sp"
+        android:background="@android:color/transparent"
+        android:paddingTop="10dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbModifyHome"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/green"
+        android:src="@drawable/done"
+        android:translationX="-15dp"
+        android:translationY="-80dp"
+        app:maxImageSize="60dp"
+        android:onClick="callModifyNote"/>
+
+</LinearLayout>

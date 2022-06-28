@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "385384957559",
+    "project_id": "blocknotasonline",
+    "storage_bucket": "blocknotasonline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385384957559:android:5095fc0e444c32ae2ce872",
+        "android_client_info": {
+          "package_name": "com.example.blocknotasonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385384957559-kp720e2p1amc2dg3sgprqt78hkbqeavc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blocknotasonline",
+            "certificate_hash": "1011fd0fd9f763e557cf9362f07418e1de7dcfee"
+          }
+        },
+        {
+          "client_id": "385384957559-drl9d6n258q648lg2hmqfjh3okpnq86v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbkpB27luYPMDxi1K-Glj401nX2cQv0gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385384957559-drl9d6n258q648lg2hmqfjh3okpnq86v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
