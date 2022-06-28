@@ -4,7 +4,7 @@ Esta app es un block de notas online donde permite registrar a múltiples usuari
 
 Componentes utilizados:
 - Firebase Authentication: Inicio de sesión, registrarse y recuperar contraseña.
-- Firestore Database: almacena las notas de los usuarios.
+- Firestore Database: CRUD.
 - FirebaseUI: FirestoreRecyclerView: me permite una mejor manipulación sobre el RecyclerView.
 - RecyclerViewSwipeDecorator: SwipeToDelete: me permite borrar elementos del RV simplemente deslizandolo.
 
